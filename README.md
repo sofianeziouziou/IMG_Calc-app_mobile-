@@ -11,4 +11,4 @@ Une application Android pour calculer l'IMG (Indice de Masse Grasse) et donner d
 ## Installation
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/tonPseudo/Tp5AndroidApp.git
+https://github.com/sofianeziouziou/IMG_Calc-app_mobile-.git
