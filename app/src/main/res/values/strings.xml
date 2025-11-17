@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IMG_Calc</string>
+    <string name="title_activity_inscription">InscriptionActivity</string>
+    <string name="title_activity_inscription_activity.java">InscriptionActivity.java</string>
+</resources>

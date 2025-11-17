@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_card"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvConseilsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conseils Santé Personnalisés"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0A4E8C"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvConseils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnRetourConseils"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="⬅ Retour"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

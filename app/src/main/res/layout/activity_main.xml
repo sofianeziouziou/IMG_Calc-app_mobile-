@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gr"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculez votre IMG"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0A4E8C"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Taille -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:text="Taille (cm) :"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <EditText
+                android:id="@+id/etTaille"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:inputType="number"
+                android:hint="ex: 180"/>
+        </LinearLayout>
+
+        <!-- Poids -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:text="Poids (kg) :"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <EditText
+                android:id="@+id/etPoids"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:inputType="numberDecimal"
+                android:hint="ex: 75"/>
+        </LinearLayout>
+
+        <!-- Age -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:text="Age :"
+                android:textStyle="bold"
+                android:textColor="#333333"/>
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:inputType="number"
+                android:hint="ex: 30"/>
+        </LinearLayout>
+
+        <!-- Radio Sexe -->
+        <RadioGroup
+            android:id="@+id/rgSexe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/rbFemme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femme"/>
+
+            <RadioButton
+                android:id="@+id/rbHomme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homme"
+                android:layout_marginStart="18dp"/>
+        </RadioGroup>
+
+        <!-- Boutons CALCULER / ANNULER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnCalculer"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="0.45"
+                android:text="CALCULER"
+                android:background="#FF9800"
+                android:textColor="#000000"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnAnnuler"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="0.45"
+                android:text="ANNULER"
+                android:background="#FF9800"
+                android:textColor="#000000"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <!-- Zone résultat -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votre IMG = -"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#E53935"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"/>
+
+        <!-- Bouton Conseils santé -->
+        <Button
+            android:id="@+id/btnConseils"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Conseils santé"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>
